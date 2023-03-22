@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1098498650816",
+    "project_id": "black-and-one-parent",
+    "storage_bucket": "black-and-one-parent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098498650816:android:afa98e3c9eb01aa608f325",
+        "android_client_info": {
+          "package_name": "com.example.black_and_one_parent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098498650816-f6ei1he1jfdvau69m8uc2svpspf7v4mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADZOBzFemiyz6vj5QCktzDkSUGO8IXUq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098498650816-f6ei1he1jfdvau69m8uc2svpspf7v4mt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1098498650816-ratv1reg38oqkob1c48nl2m9irvamobn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.oneclick.blackandoneparent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098498650816:android:e8f827a6eec9a3f508f325",
+        "android_client_info": {
+          "package_name": "com.oneclick.blackandoneparent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098498650816-f6ei1he1jfdvau69m8uc2svpspf7v4mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADZOBzFemiyz6vj5QCktzDkSUGO8IXUq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098498650816-f6ei1he1jfdvau69m8uc2svpspf7v4mt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1098498650816-ratv1reg38oqkob1c48nl2m9irvamobn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.oneclick.blackandoneparent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_theme_color"
+        tools:context=".OTPActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_layout_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/top_white_curve_30sdp"
+            android:paddingBottom="@dimen/_260sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/b_o_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/verify_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_75sdp"
+                android:text="@string/verify"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_theme"
+                android:textSize="@dimen/_26ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/login_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:letterSpacing="0.0"
+                android:text="@string/verify_subtitle"
+                android:textAlignment="textStart"
+                android:textColor="@color/hint_color_theme"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/verify_title" />
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxLength="6"
+                app:cursorVisible="false"
+                app:forceKeyboard="true"
+                app:hint="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_subtitle"
+                app:password="false"
+                app:pinBackground="@drawable/otp_field_bg"
+                app:pinHeight="@dimen/_35sdp"
+                app:pinLength="6"
+                app:pinWidth="@dimen/_35sdp" />
+
+            <TextView
+                android:id="@+id/remainingSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:text="123"
+                app:layout_constraintEnd_toEndOf="@id/pinview"
+                app:layout_constraintTop_toBottomOf="@id/pinview" />
+
+            <TextView
+                android:id="@+id/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/capsule_with_solid"
+                android:padding="@dimen/_13sdp"
+                android:text="Log In"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/remainingSecond" />
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:padding="@dimen/_13sdp"
+                android:text="@string/resend_otp"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_theme"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

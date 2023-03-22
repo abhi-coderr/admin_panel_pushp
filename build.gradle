@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+
+    dependencies {
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        /*************************************************************
+         * Project dependencies
+         *************************************************************/
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0'
+        classpath 'com.google.gms:google-services:4.3.15'//For Firebase
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.4'
+//TODO: For Firebase Crashlytics, Uncomment when app is going to be live.
+        classpath 'com.google.firebase:perf-plugin:1.4.2'//For Firebase Preference
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'//For Safe Args
+        classpath "org.jetbrains.kotlin:kotlin-reflect:1.7.10"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.4.1' apply false
+    id 'com.android.library' version '7.4.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'com.google.dagger.hilt.android' version '2.44' apply false
+}
